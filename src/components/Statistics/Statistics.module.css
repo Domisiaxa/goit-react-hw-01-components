@@ -1,25 +1,26 @@
-import styled from 'styled-components';
-
-export const Section = styled.section`
+.statistic {
   background-color: white;
   width: 555px;
   margin: 60px auto;
   border: 1px solid rgb(173 199 225);
-`;
+  text-align: center;
+  padding-top: 50px;
+}
 
-export const Title = styled.h2`
+.title {
   text-align: center;
   font-size: 25px;
   font-weight: 600;
   color: black;
   margin: 50px auto;
-`;
+}
 
-export const List = styled.ul`
+.list {
+  padding-top: 50px;
   display: flex;
-`;
+}
 
-export const Item = styled.li`
+.item {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -29,10 +30,4 @@ export const Item = styled.li`
   color: white;
   font-size: 20px;
   font-weight: 600;
-  background-color: ${getRandomHexColor};
-  }};
-`;
-
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
